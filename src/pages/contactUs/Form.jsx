@@ -59,7 +59,7 @@ const PostForm = () => {
     </Formik>
     {isRegistered && (
         <Modal onClose={closeModal}>
-          <h2>ՇՆՈՐՀԱԿԱԼՈՒԹՅՈՒՆ</h2>
+          <h5>ՇՆՈՐՀԱԿԱԼՈՒԹՅՈՒՆ</h5>
           <p>ՄԵՐ ՄԱՍՆԱԳԵՏԸ ԿՊԱՏԱՍԽԱՆԻ ՁԵԶ ԷԼ․ՓՈՍՏԻ ՄԻՋՈՑՈՎ</p>
           <div>
             <img src={vectorImage} alt="" />
