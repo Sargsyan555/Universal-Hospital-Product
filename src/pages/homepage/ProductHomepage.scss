@@ -1,0 +1,27 @@
+.product{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 1024px){
+    .product{
+        .product__list{
+            justify-content: space-around;
+
+            .product__list__item{
+                width: 48%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .product{
+        .product__list{
+            justify-content: center;
+            .product__list__item{
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+footer{
+    min-height: 342px;
+    background-color: #12724F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span, p, li{
+        color: #FFF;
+        font-family: Bokonique;
+        font-size: 12.375px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124%; /* 15.345px */
+        font-variant: all-small-caps;
+    }
+    h4{
+        color: #FFF;
+        font-family: Bokonique;
+        font-size: 24.75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-variant: all-small-caps;
+    }
+    
+    .footer__content{
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        &__networks{
+            span{
+                svg{
+                    width: 49.5px;
+                    height: 49.5px;
+                    flex-shrink: 0;
+                    fill: rgba(0, 0, 0, 0.00);
+                    margin: 0 5px;
+                }    
+            }
+        }
+        &__logo{
+            width: 25%;
+        }
+        &__production{
+            width: 25%;
+            ul{
+                margin-top: 20px;
+                li{
+                   
+                }
+            }
+        
+        }
+        &__contact{
+            width: 25%;
+                div{
+                    margin-top: 30px;
+                }
+        }
+        &__networks{
+            width: 25%;
+            div{
+                margin-top: 40px;
+            }
+        }
+    }
+    .endline{
+        display: flex;
+        justify-content: center;
+        p{
+            color: #FFF;
+            font-family: Bokonique;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 124%; /* 17.36px */
+            font-variant: all-small-caps;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    footer{
+        padding: 0 25px;
+    }
+}
+@media only screen and (max-width: 860px){
+    footer{
+        .footer__content{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+            &__networks{
+                width: 50%;
+                span{
+                    svg{
+                        width: 49.5px;
+                        height: 49.5px;
+                        flex-shrink: 0;
+                        fill: rgba(0, 0, 0, 0.00);
+                        margin: 0 5px;
+                    }    
+                }
+            }
+            &__logo{
+                width: 50%;
+
+            }
+            &__production{
+                width: 50%;
+
+                ul{
+                    margin-top: 20px;
+                    li{
+                       
+                    }
+                }
+            
+            }
+            &__contact{
+                width: 50%;
+
+                    div{
+                        margin-top: 30px;
+                    }
+            }
+            &__networks{
+                width: 50%;
+
+                div{
+                    margin-top: 40px;
+                }
+            }
+        }
+        .endline{
+            display: flex;
+            justify-content: center;
+            p{
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 124%; /* 17.36px */
+                font-variant: all-small-caps;
+            }
+        }
+    }
+}

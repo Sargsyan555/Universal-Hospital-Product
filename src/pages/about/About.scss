@@ -1,0 +1,114 @@
+.about{
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    .header{
+        text-align: center;
+    }
+    .aboutPartOne, .aboutPartTwo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .img{
+            min-height: 100%;
+            width: 50%;
+        }
+    }
+    .aboutPartOne{
+        .img{
+            background-image: url('../../assets/images/Ellipse.png');
+            background-position: left bottom; /* Position image at the left and bottom */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding: 100px 0;
+            img{
+                margin-left: 10%;
+                width: 90%;
+            }
+        }
+        .text{
+            width: 45%;
+        }
+
+    }
+    .aboutPartTwo{
+        .img{
+            background-image: url('../../assets/images/sectionOneC.png');
+            background-position: right bottom; /* Position image at the left and bottom */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding: 100px 0;
+            img{
+                margin-right: 10%;
+                width: 90%;
+            }
+        }
+        .text{
+            text-align: left;
+            width: 45%;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .about{
+        .aboutPartOne{
+            flex-direction: column;
+            .img{
+                width: 100%;
+                img{
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+            .text{
+                width: 90%;
+            }
+    
+        }
+        .aboutPartTwo{
+            margin-top: 20px;
+            flex-direction: column;
+            .img{
+                width: 100%;
+                img{
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+            .text{
+                width: 90%;
+            }        
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .about{
+        .aboutPartOne{
+            .img{
+                background-image: none;
+                padding: 0;
+                img{
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+            .text{
+                width: 90%;
+            }
+    
+        }
+        .aboutPartTwo{
+            .img{
+                background-image: none;
+                padding: 0;
+                img{
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+            .text{
+                width: 90%;
+            }      
+          }
+    }
+}

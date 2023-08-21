@@ -1,0 +1,21 @@
+.productsPage{
+    width: 100%;
+    
+    nav{
+        text-align: center;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .true{
+            color: #12724F;
+        }
+   }
+   
+}

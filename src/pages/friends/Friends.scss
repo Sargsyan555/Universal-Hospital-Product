@@ -1,0 +1,50 @@
+.friends{
+    margin-bottom: 20px;
+    &_header{
+        display: flex;
+        justify-content: center;
+    }
+    &_names{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 30px;
+       li{
+        width: 30%;
+        margin-top: 25px;
+        border-radius: 14px;
+        background: #DDD;
+        height: 482px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       img{
+        width: 100%;
+       }
+       
+    }
+    &_button{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .friends{
+        &_names{
+           li{
+            width: 48%;
+           }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .friends{
+        &_names{
+           li{
+            width: 100%;
+           }
+        }
+    }
+}
